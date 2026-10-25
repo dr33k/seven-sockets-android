@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Seven Sockets"
+rootProject.name = "sockets"
 include(":app")

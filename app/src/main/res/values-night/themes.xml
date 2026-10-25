@@ -1,7 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme in night mode. -->
     <style name="Base.Theme.SevenSockets" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Primary Brand Colors -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/primary_black</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <!-- Secondary Brand Colors -->
+        <item name="colorSecondary">@color/primary_black</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/grey_900</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+
+        <!-- Tertiary Brand Colors -->
+        <item name="colorTertiary">@color/grey_500</item>
+        <item name="colorOnTertiary">@color/primary_black</item>
+        <item name="colorTertiaryContainer">@color/grey_700</item>
+        <item name="colorOnTertiaryContainer">@color/white</item>
+
+        <!-- Error Colors -->
+        <item name="colorError">@color/error_red</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnErrorContainer">@color/on_error_container</item>
+
+        <!-- Surface & Background -->
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorOnBackground">@color/on_background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/on_surface_dark</item>
+        <item name="colorSurfaceVariant">@color/surface_variant_dark</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant_dark</item>
+        <item name="colorOutline">@color/outline_dark</item>
+
+        <!-- Window System Bars -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.SevenSockets" parent="Base.Theme.SevenSockets" />
+
+    <!-- Custom Button Styles for Dark Theme -->
+    <style name="Widget.SevenSockets.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/primary_black</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Widget.SevenSockets.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/outline_dark</item>
+        <item name="android:textColor">@color/on_surface_dark</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Widget.SevenSockets.Button.Social" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/grey_700</item>
+        <item name="android:textColor">@color/on_surface_dark</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="iconPadding">12dp</item>
+        <item name="iconGravity">textStart</item>
     </style>
 </resources>
